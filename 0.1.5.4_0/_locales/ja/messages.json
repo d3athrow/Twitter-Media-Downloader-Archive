@@ -1,0 +1,107 @@
+{
+   "AUTO_CONTINUE": {
+      "message": "ダウンロード制限到達後の自動継続"
+   },
+   "BULK_DOWNLOAD": {
+      "message": "一括ダウンロード"
+   },
+   "BULK_DOWNLOAD_LIKES": {
+      "message": "「いいね」一括ダウンロード"
+   },
+   "DEFAULT": {
+      "message": "デフォルトに戻す"
+   },
+   "DEFAULT_ACTION_ON_CLICK_EVENT": {
+      "message": "クリック時のデフォルト動作（※[Alt]押下時は逆の動作）"
+   },
+   "DISABLED": {
+      "message": "無効"
+   },
+   "DOMATION": {
+      "message": "贈り物 🎁 歓迎！"
+   },
+   "DOWNLOAD_LINK": {
+      "message": "ダウンロードボタン"
+   },
+   "DOWNLOAD_MEDIA": {
+      "message": "メディアダウンロード"
+   },
+   "DOWNLOAD_SIZE_LIMIT_MB": {
+      "message": "ダウンロードサイズ制限"
+   },
+   "ENABLED": {
+      "message": "有効"
+   },
+   "ENABLED_ON_TWEETDECK": {
+      "message": "TweetDeck での動作（ダウンロードボタンのみ）"
+   },
+   "ENABLE_FILTER": {
+      "message": "検索タイムラインでのメディアフィルタ(filter:～使用)"
+   },
+   "ENABLE_VIDEO_DOWNLOAD": {
+      "message": "動画ダウンロード"
+   },
+   "ENABLE_ZIPREQUEST": {
+      "message": "バックグラウンドでのZIP化（パフォーマンス向上）"
+   },
+   "FAST_LOW_ACCURACY": {
+      "message": "速い・低精度"
+   },
+   "IF_DOWNLOAD_FAILURE": {
+      "message": "ダウンロードに失敗する場合"
+   },
+   "IMAGE": {
+      "message": "画像"
+   },
+   "IMAGE_DOWNLOAD_LINK": {
+      "message": "画像ダウンロードボタン"
+   },
+   "OPEN_MEDIA_LINK": {
+      "message": "メディアのリンクを開く"
+   },
+   "OPTIONS": {
+      "message": "Twitter メディアダウンローダ"
+   },
+   "SET": {
+      "message": "設定"
+   },
+   "SLOW_HIGH_ACCURACY": {
+      "message": "遅い・高精度"
+   },
+   "START": {
+      "message": "動作開始"
+   },
+   "STOP": {
+      "message": "動作停止"
+   },
+   "TAB_SORTING": {
+      "message": "タブ並び替え"
+   },
+   "TAB_SORTING_ENABLED": {
+      "message": "[1][2][3][4]"
+   },
+   "UNDER_SUSPENSION": {
+      "message": "停止中"
+   },
+   "USER_AUTH_REQUIRED": {
+      "message": "ユーザー認証が必要"
+   },
+   "VIDEO": {
+      "message": "動画"
+   },
+   "VIDEO_DOWNLOAD_LINK": {
+      "message": "動画ダウンロードボタン"
+   },
+   "ext_description": {
+      "description": "The description of the extension.",
+      "message": "Web版Twitterで、ユーザーのメディアタイムラインの原寸画像・動画をまとめてダウンロードできます。"
+   },
+   "ext_short_name": {
+      "description": "The short version of the extension's name.",
+      "message": "TMDL"
+   },
+   "ext_title": {
+      "description": "The title of the extension.",
+      "message": "Twitter メディアダウンローダ"
+   }
+}

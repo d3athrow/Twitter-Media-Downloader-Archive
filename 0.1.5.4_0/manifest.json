@@ -1,0 +1,69 @@
+{
+   "action": {
+      "default_icon": "img/icon_16.png",
+      "default_popup": "html/options.html",
+      "default_title": "__MSG_ext_title__"
+   },
+   "author": "furyu",
+   "background": {
+      "service_worker": "background-wrapper.js"
+   },
+   "commands": {
+      "bulk_download": {
+         "description": "__MSG_BULK_DOWNLOAD__",
+         "suggested_key": {
+            "default": "Shift+Alt+D",
+            "mac": "Shift+Alt+D"
+         }
+      },
+      "bulk_download_likes": {
+         "description": "__MSG_BULK_DOWNLOAD_LIKES__",
+         "suggested_key": {
+            "default": "Shift+Alt+L",
+            "mac": "Shift+Alt+L"
+         }
+      }
+   },
+   "content_scripts": [ {
+      "all_frames": false,
+      "js": [ "js/browser_info.js", "js/jquery.min.js", "js/twitter-oauth/sha1.js", "js/twitter-oauth/oauth.js", "js/twitter-oauth/twitter-api.js", "js/session.js" ],
+      "matches": [ "*://twitter.com/*", "*://tweetdeck.twitter.com/*", "*://api.twitter.com/*", "*://pbs.twimg.com/media/*", "*://mobile.twitter.com/*" ],
+      "run_at": "document_start"
+   }, {
+      "all_frames": true,
+      "js": [ "js/decimal.min.js", "js/jszip.min.js", "js/init.js", "js/timeline.js" ],
+      "matches": [ "*://twitter.com/*", "*://tweetdeck.twitter.com/*", "*://pbs.twimg.com/media/*", "*://mobile.twitter.com/*" ],
+      "run_at": "document_start"
+   }, {
+      "all_frames": true,
+      "js": [ "js/main_react.user.js" ],
+      "matches": [ "*://twitter.com/*", "*://mobile.twitter.com/*" ],
+      "run_at": "document_end"
+   }, {
+      "all_frames": true,
+      "js": [ "js/main_tweetdeck.user.js" ],
+      "matches": [ "*://tweetdeck.twitter.com/*" ],
+      "run_at": "document_end"
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_ext_description__",
+   "host_permissions": [ "*://*.twitter.com/*", "*://pbs.twimg.com/*", "*://video.twimg.com/*", "*://*.cdn.vine.co/*" ],
+   "icons": {
+      "128": "img/icon_128.png",
+      "16": "img/icon_16.png",
+      "19": "img/icon_19.png",
+      "48": "img/icon_48.png"
+   },
+   "incognito": "split",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnBJBp7R/agmgXkbIRIwethmnX761ckg8WVVP9IPU3JHcm4omzoxKMB8LbEArjWFp6Wa9aTIzXAUxaT1kmSFkdJ4a5u1nMRxBvXHD6pWvu4a3wmPTJWQCMnxf+MRg6JTnhENuV8+K1mj5Nd//LFZA/2/VehYPbBc3jlCmSDgGTzNlHO4s9kjLZ54E/gU0DNgUavX8t7TEWISs1lCBeJ3nrfM13f+Vg6wGVJt/+qk1hc8v1boUPz2fDwLOeemDOiReanizTjbwCt+17aHvP0f4hlWROzeBXOYMWAQiGjq2cP8J2O/md8B+/kTnMaMZzWFUnDPFikaKoqA2PthJQzN2BQIDAQAB",
+   "manifest_version": 3,
+   "name": "__MSG_ext_title__",
+   "options_ui": {
+      "open_in_tab": true,
+      "page": "html/options.html"
+   },
+   "permissions": [ "storage" ],
+   "short_name": "__MSG_ext_short_name__",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.1.5.4"
+}
